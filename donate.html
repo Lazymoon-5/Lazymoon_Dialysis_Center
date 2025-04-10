@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - Lazymoon Dialysis Centre</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: #f4f4f4;
+        }
+        .content {
+            background: white;
+            padding: 40px;
+            margin: 20px auto;
+            max-width: 800px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: left;
+        }
+        .cta-button {
+            display: inline-block;
+            background: #34a853;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        label, input {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        input {
+            padding: 10px;
+        }
+        button {
+            background: #e74c3c;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+    <script>
+        function showPopup(event) {
+            event.preventDefault(); // Prevent actual form submission
+            alert("Click on the 'DONATE VIA GOOGLE PAY' for Further process!");
+        }
+    </script>
+</head>
+<body>
+    <header style="background: #2c3e50; color: white; padding: 15px; text-align: center;">
+        <h1>Lazymoon Dialysis Centre</h1>
+        <nav>
+            <a href="index.html" style="color: white; margin: 0 15px;">Home</a>
+            <a href="patient-resources.html" style="color: white; margin: 0 15px;">Patient Resources</a>
+            <a href="services.html" style="color: white; margin: 0 15px;">Services</a>
+            <a href="about.html" style="color: white; margin: 0 15px;">About Us</a>
+            <a href="donate.html" style="color: white; margin: 0 15px;">Donate</a>
+            <a href="book-appointment.html" style="color: white; margin: 0 15px;">Book Appointment</a>
+        </nav>
+    </header>
+    
+    <section class="content">
+        <h2>Make a Difference with Your Donation</h2>
+        <p>Your support helps us provide quality dialysis care to those in need.</p>
+        <form onsubmit="showPopup(event)">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="amount">Donation Amount (INR):</label>
+            <input type="number" id="amount" name="amount" required>
+
+            <button type="submit">Submit</button>
+        </form>
+        <br>
+        <a href="upi://pay?pa=shaikhsuher@okhdfcbank&pn=Lazymoon Dialysis Centre&cu=INR" class="cta-button">Donate via Google Pay</a>
+    </section>
+    
+    <footer style="background: #333; color: white; padding: 10px; text-align: center; margin-top: 20px;">
+        <p>&copy; 2025 Lazymoon Dialysis Centre. All rights reserved.</p>
+        <a href="https://www.whatsapp.com" style="color: white;">WhatsApp Now</a> |
+        <a href="mailto:skzakariya2008@gmail.com" style="color: white;">Email Now</a>
+    </footer>
+</body>
+</html>
